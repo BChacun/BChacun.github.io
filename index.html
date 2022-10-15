@@ -27,6 +27,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Carousel -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 </head>
 
@@ -62,6 +66,7 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#projects" class="nav-link scrollto active"><i class="bx bxs-folder"></i> <span>Projects</span></a></li>
+          <li><a href="#commitments" class="nav-link scrollto active"><i class="bx bxs-folder"></i> <span>Commitments</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -240,6 +245,8 @@
           
         </div>
 
+
+        <!-- Project: Prophet & Kats Libraries Benchmark -->
         <div class="row">
           <div  data-aos="fade-up">
             <h3 class="resume-title">Project: Prophet & Kats Libraries Benchmark</h3>
@@ -262,48 +269,102 @@
 
 
               <h4>Pictures :</h4>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
 
-<div class="w3-row-padding">
-  <div class="w3-container w3-third">
-    <img src="assets/img/equancy_1.png" style="width:100%;cursor:pointer" 
-    onclick="onClick(this)" class="w3-hover-opacity">
-  </div>
-  <div class="w3-container w3-third">
-    <img src="assets/img/equancy_2.png" style="width:100%;cursor:pointer" 
-    onclick="onClick(this)" class="w3-hover-opacity">
-  </div>
-  <div class="w3-container w3-third">
-    <img src="assets/img/equancy_3.png" style="width:100%;cursor:pointer" 
-    onclick="onClick(this)" class="w3-hover-opacity">
-  </div>
-</div>
 
-<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style="width:100%">
-  </div>
-</div>
+              <div class="w3-row-padding">
+                <div class="w3-container w3-third">
+                  <img src="assets/img/equancy_1.png" style="width:100%;cursor:pointer" 
+                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                  <img src="assets/img/equancy_2.png" style="width:100%;cursor:pointer" 
+                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                  <img src="assets/img/equancy_3.png" style="width:100%;cursor:pointer" 
+                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                </div>
+              </div>
 
-<script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-</script>
-           
-  
+              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+              </div>
+        </div>
+
+        <!-- END Prophet & Kats Libraries Benchmark -->
+
+      </section>
+        <!-- ======= Associative commitments Section ======= -->
+
+      <section id="commitments" class="resume">
+          <div class="container">
+            <div class="section-title">
+              <h2>Commitments</h2>
+              
+            </div>
+        <div class="row">
+          <div>
+          <div  data-aos="fade-up">
+            
+            <h3 class="resume-title">President</h3>
+            <div class="resume-item">
+              <h4>Sport Office</h4>
+              <h5>2021 -2022</h5>
+              <p><em>IMT Atlantique, Nantes</em></p>
+             
+
+              <p>
+                Management of the school's associative sports,
+                organization of major sporting events, account management,
+                public speaking, taking on the association's criminal and financial
+                responsibilities.
+              </p>
 
 
-     
+              
+
+
+
+              <h4>Pictures :</h4>
+
+
+
+
+
+              <div class="w3-row-padding">
+                <div class="w3-container w3-third">
+                  <img src="assets/img/bds_1.jpg" style="width:100%;cursor:pointer" 
+                  onclick="onClick_2(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                  <img src="assets/img/bds_2.jpg" style="width:100%;cursor:pointer" 
+                  onclick="onClick_2(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                  <img src="assets/img/bds_3.jpg" style="width:100%;cursor:pointer" 
+                  onclick="onClick_2(this)" class="w3-hover-opacity">
+                </div>
+              </div>
+
+              <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img02" style="width:100%">
+                </div>
+              </div>
+
+            </div>
         </div>
 
       </div>
+
+        </div>
     </section>
     <!-- End Projects Section -->
 
@@ -327,6 +388,21 @@ function onClick(element) {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Script Zoom Image -->
+  <script>
+    function onClick_1(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+
+    function onClick_2(element) {
+      document.getElementById("img02").src = element.src;
+      document.getElementById("modal02").style.display = "block";
+    }
+    </script>
+
+
 
 </body>
 
