@@ -246,6 +246,67 @@
         </div>
 
 
+        <!-- Project: Human2Anime2Human -->
+        <div class="row">
+          <div  data-aos="fade-up">
+            <h3 class="resume-title">Human 2 Anime 2 Human</h3>
+            <div class="resume-item">
+              <h4>Third year project at IMT Atlantique / BAC + 5</h4>
+              <h5>2022</h5>
+              <p><em>IMT Atlantique, Brest</em></p>
+             
+
+              <p>
+                We studied CycleGans and used this approach to try to create a bijection between 
+                human faces and Japanese animation faces. The real data is on the odd 
+                columns while the created data is on the even columns.
+              <br><br>
+                The main problem of our project comes from the datasets used. Our human portrait dataset is very diverse, 
+                we find all origins and some people wear headgear. While our second animation dataset contains almost 
+                only female characters of white skin color. A bijection is then very difficult to create.
+                <br><br>
+                Added to this is the fact that the model was trained over around 6 hours, for around 2 million parameters and around 5,000 images for each set.
+                <br><br>
+                We believe that this mainly explains the lack of quality of our results.
+              </p>
+
+
+              <a href="https://github.com/BChacun/CycleGan" class="buttonD">Link to the project</a>
+
+
+
+              <h4>Pictures :</h4>
+
+
+
+
+
+              <div class="w3-row-padding">
+                <div class="w3-container w3-third">
+                  <img src="assets/img/CG1.png" style="width:100%;cursor:pointer" 
+                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                  <img src="assets/img/CG2.png" style="width:100%;cursor:pointer" 
+                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                  <img src="assets/img/CG3.png" style="width:100%;cursor:pointer" 
+                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                </div>
+              </div>
+
+              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+              </div>
+        </div>
+
+        <!-- END Human2Anime2Human -->
+
+
         <!-- Project: Prophet & Kats Libraries Benchmark -->
         <div class="row">
           <div  data-aos="fade-up">
@@ -277,27 +338,31 @@
               <div class="w3-row-padding">
                 <div class="w3-container w3-third">
                   <img src="assets/img/equancy1.jpg" style="width:100%;cursor:pointer" 
-                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                  onclick="onClick_2(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-container w3-third">
                   <img src="assets/img/equancy2.jpg" style="width:100%;cursor:pointer" 
-                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                  onclick="onClick_2(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-container w3-third">
                   <img src="assets/img/equancy3.jpg" style="width:100%;cursor:pointer" 
-                  onclick="onClick_1(this)" class="w3-hover-opacity">
+                  onclick="onClick_2(this)" class="w3-hover-opacity">
                 </div>
               </div>
 
-              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+              <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
                 <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                 <div class="w3-modal-content w3-animate-zoom">
-                  <img id="img01" style="width:100%">
+                  <img id="img02" style="width:100%">
                 </div>
               </div>
         </div>
 
         <!-- END Prophet & Kats Libraries Benchmark -->
+
+
+
+        
 
       </section>
         <!-- ======= Associative commitments Section ======= -->
@@ -340,22 +405,22 @@
               <div class="w3-row-padding">
                 <div class="w3-container w3-third">
                   <img src="assets/img/bds1.jpg" style="width:100%;cursor:pointer" 
-                  onclick="onClick_2(this)" class="w3-hover-opacity">
+                  onclick="onClick_3(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-container w3-third">
                   <img src="assets/img/bds2.jpg" style="width:100%;cursor:pointer" 
-                  onclick="onClick_2(this)" class="w3-hover-opacity">
+                  onclick="onClick_3(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-container w3-third">
                   <img src="assets/img/bds3.jpg" style="width:100%;cursor:pointer" 
-                  onclick="onClick_2(this)" class="w3-hover-opacity">
+                  onclick="onClick_3(this)" class="w3-hover-opacity">
                 </div>
               </div>
 
-              <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+              <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
                 <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                 <div class="w3-modal-content w3-animate-zoom">
-                  <img id="img02" style="width:100%">
+                  <img id="img03" style="width:100%">
                 </div>
               </div>
 
@@ -399,6 +464,11 @@
     function onClick_2(element) {
       document.getElementById("img02").src = element.src;
       document.getElementById("modal02").style.display = "block";
+    }
+
+    function onClick_3(element) {
+      document.getElementById("img03").src = element.src;
+      document.getElementById("modal03").style.display = "block";
     }
     </script>
 
